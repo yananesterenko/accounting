@@ -18,7 +18,7 @@ pipeline{
             }
           }
       }
-           stage('Mvn Package'){
+      stage('Mvn Package'){
                steps {
                    withMaven(maven: 'Maven'){
                   sh 'mvn package -DskipTests=true'
