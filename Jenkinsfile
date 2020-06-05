@@ -11,13 +11,13 @@ pipeline{
                 git credentialsId: 'GitHub Connection', url: 'https://github.com/yananesterenko/accounting.git'
             }
        }
-      
+
 
         stage("Docker build Image") {
             steps {
-                sh 'images -a'
+                sh 'docker images -a'
                 sh 'docker build -t  yana20200212/demoacc .'
-                sh 'images -a'
+                sh 'docker images -a'
                 }
             }
    }
