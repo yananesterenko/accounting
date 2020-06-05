@@ -3,7 +3,7 @@ pipeline{
    stages {
        stage('Scm checkout') {
             steps {
-                git credentialsId: 'github-cred', url: 'https://github.com/yananesterenko/accounting.git'
+                git credentialsId: 'Jenkins', url: 'https://github.com/yananesterenko/accounting.git'
             }
        }
        stage('Mvn Compile'){
