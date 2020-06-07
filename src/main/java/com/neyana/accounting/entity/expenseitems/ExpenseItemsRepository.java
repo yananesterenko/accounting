@@ -1,6 +1,6 @@
 package com.neyana.accounting.entity.expenseitems;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ExpenseItemsRepository extends CrudRepository<ExpenseItems, Long> {
+public interface ExpenseItemsRepository extends JpaRepository<ExpenseItems, Long> {
 }

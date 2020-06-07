@@ -1,13 +1,13 @@
-package com.neyana.accounting.entity.incomeitems;
+package com.neyana.accounting.entity.operations;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class IncomeItems {
+public class TypeOperations {
     @Id
     @GeneratedValue
-    Long id;
+    Long Id;
     String name;
 }

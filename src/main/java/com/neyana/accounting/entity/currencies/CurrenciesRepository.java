@@ -1,7 +1,6 @@
 package com.neyana.accounting.entity.currencies;
 
-import com.neyana.accounting.entity.accounts.Accounts;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CurrenciesRepository extends CrudRepository<Currencies, Long> {
+public interface CurrenciesRepository extends JpaRepository<Currencies, Long> {
 }

@@ -1,4 +1,4 @@
-package com.neyana.accounting.congig;
+package com.neyana.accounting.config;
 
 
 import org.springframework.context.annotation.Bean;

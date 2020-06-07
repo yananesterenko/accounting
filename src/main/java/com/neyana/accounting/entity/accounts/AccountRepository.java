@@ -1,8 +1,6 @@
 package com.neyana.accounting.entity.accounts;
 
-import com.neyana.accounting.entity.accounts.Accounts;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AccountRepository extends CrudRepository<Accounts, Long> {
+public interface AccountRepository extends JpaRepository<Accounts, Long> {
 }
