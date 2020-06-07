@@ -20,7 +20,7 @@ pipeline{
       }
       stage('Mvn Package'){
                steps {
-                   withMaven(maven: 'Maven'){
+                   withMaven(maven: 'apache-maven-3.6.2'){
                   sh 'mvn package -DskipTests=true'
                   }
                }
