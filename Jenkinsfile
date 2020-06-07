@@ -15,6 +15,10 @@ pipeline{
            steps {
            echo "Mvn Compile!!!!!!!!!!!"
             withMaven(maven: 'maven_3_6_3'){
+            sh "ls -la ${MVN_CMD_DIR}"
+                      sh "cat ${MVN_CMD_DIR}/mvn*"
+                      sh "/bin/sh -c 'which mvn'"
+                      sh "mvn -v"
             sh 'mvn clean compile -DskipTests=true'
             }
           }
