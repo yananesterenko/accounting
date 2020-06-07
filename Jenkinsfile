@@ -13,6 +13,7 @@ pipeline{
        }
        stage('Mvn Compile'){
            steps {
+           echo "Mvn Compile!!!!!!!!!!!"
             withMaven(maven: 'Maven'){
             sh 'mvn clean compile -DskipTests=true'
             }
