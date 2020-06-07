@@ -1,6 +1,8 @@
 package com.neyana.accounting.entity.accounts;
 
 
+import com.neyana.accounting.entity.operations.TypeOperations;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
