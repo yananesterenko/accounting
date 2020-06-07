@@ -13,7 +13,7 @@ pipeline{
        }
        stage('Mvn Compile!!'){
            steps {
-            withMaven(maven: 'maven_3_6_2'){
+            withMaven(maven: 'apache-maven-3.6.2'){
             sh 'mvn clean compile -DskipTests=true'
             }
           }
