@@ -8,7 +8,7 @@ pipeline{
        }
        stage('Scm checkout') {
             steps {
-                git credentialsId: 'GitHub Connection', url: 'https://github.com/yananesterenko/accounting.git'
+                git credentialsId: 'github-cred', url: 'https://github.com/yananesterenko/accounting.git'
             }
        }
        stage('Mvn Compile'){
